@@ -20,7 +20,7 @@ class GasConversionRecipeProvider implements ISubRecipeProvider {
         //Flint -> oxygen
         ItemStackToChemicalRecipeBuilder.gasConversion(
               IngredientCreatorAccess.item().from(Items.FLINT),
-              MekanismGases.OXYGEN.getStack(10)
+              MekanismGases.OXYGEN.getStack(1000)
         ).build(consumer, Mekanism.rl(basePath + "flint_to_oxygen"));
         //Osmium block -> osmium
         ItemStackToChemicalRecipeBuilder.gasConversion(
@@ -35,12 +35,12 @@ class GasConversionRecipeProvider implements ISubRecipeProvider {
         //Salt -> hydrogen chloride
         ItemStackToChemicalRecipeBuilder.gasConversion(
               IngredientCreatorAccess.item().from(MekanismTags.Items.DUSTS_SALT),
-              MekanismGases.HYDROGEN_CHLORIDE.getStack(2)
+              MekanismGases.HYDROGEN_CHLORIDE.getStack(200)
         ).build(consumer, Mekanism.rl(basePath + "salt_to_hydrogen_chloride"));
         //Sulfur -> sulfuric acid
         ItemStackToChemicalRecipeBuilder.gasConversion(
               IngredientCreatorAccess.item().from(MekanismTags.Items.DUSTS_SULFUR),
-              MekanismGases.SULFURIC_ACID.getStack(2)
+              MekanismGases.SULFURIC_ACID.getStack(200)
         ).build(consumer, Mekanism.rl(basePath + "sulfur_to_sulfuric_acid"));
     }
 }
